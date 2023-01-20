@@ -1,24 +1,13 @@
-package org.example;
+package application;
 
-abstract class Item {
-    private String name;
+public class Item {
     private int requiredLevel;
     private Slot slot;
 
-    public Item(String name, int requiredLevel, Slot slot) {
-        this.name = name;
+    public Item(int requiredLevel, Slot slot) {
         this.requiredLevel = requiredLevel;
         this.slot = slot;
     }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public int getRequiredLevel() {
         return requiredLevel;
     }
@@ -35,5 +24,4 @@ abstract class Item {
         this.slot = slot;
     }
 
-    public abstract boolean canEquip(int heroLevel);
 }

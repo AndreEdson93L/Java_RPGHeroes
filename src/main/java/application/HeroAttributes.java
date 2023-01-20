@@ -1,4 +1,4 @@
-package org.example;
+package application;
 
 public class HeroAttributes {
     private int strength;
